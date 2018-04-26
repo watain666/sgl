@@ -15,7 +15,7 @@ CONDITIONS = {
     'kind': '1',
     'searchtype': '1',
     'regionid': '1',
-    'rentprice': '0,26000',
+    'rentprice': '0,20000',
     'patternMore': '2',
     'option': 'cold',
     'hasimg': '1',
