@@ -12,14 +12,16 @@ HEADERS = {
 CONDITIONS = {
     'is_new_list': '1',
     'type': '1',
-    'kind': '1',
+    'kind': '0',
     'searchtype': '1',
     'regionid': '1',
     'rentprice': '0,20000',
-    'patternMore': '2',
+    'patternMore': '1,2,3',
+    'area': '10,40',
     'option': 'cold',
     'hasimg': '1',
     'not_cover': '1',
+    #'other': 'pet,cook',
 }
 
 WEB_URL_FORMAT_STR = "https://rent.591.com.tw/rent-detail-{}.html"
