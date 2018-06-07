@@ -12,18 +12,18 @@ HEADERS = {
 CONDITIONS = {
     'is_new_list': '1',
     'type': '1',
-    'kind': '0',
-    'searchtype': '1',
-    'regionid': '1',
-    'rentprice': '0,20000',
-    'patternMore': '1,2,3',
-    'area': '10,40',
-    'option': 'cold',
-    'hasimg': '1',
-    'not_cover': '1',
-    #'other': 'pet,cook',
+    'kind': '1',               # 類型 整層
+    'searchtype': '1',         # 照縣市
+    'regionid': '1',           # 台北市
+    'rentprice': '0,20000',    # 0-20000元
+    'patternMore': '1,2,3',    # 1-3房
+    'area': '10,40',           # 坪數
+    'option': 'cold',          # 有冷氣
+    'hasimg': '1',             # 有照片
+    'not_cover': '1',          # 非頂加
+    #'other': 'pet,cook',       # 可寵, 開伙
 }
 
 WEB_URL_FORMAT_STR = "https://rent.591.com.tw/rent-detail-{}.html"
 
-SETTINGS_PATH = "./settings.ini"
+PARSE_INTERVAL_IN_SECONDS = 900
