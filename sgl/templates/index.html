@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+<div class="container-sm">
+	<form method="POST" action="/map">
+		{{ form.csrf_token }}
+        <ul>
+            <li> {{ form.is_new_list.label }} {{ form.is_new_list }} </li><br/>
+            <li> {{ form.regionid.label }} {{ form.regionid }} </li><br/>
+            <li> {{ form.kind.label }} {{ form.kind }} </li><br/>
+            <li> {{ form.rentprice_min.label }} {{ form.rentprice_min }} ~ {{ form.rentprice_max.label }} {{ form.rentprice_max }} </li><br/>
+            <li> {{ form.patternMore.label }} {{ form.patternMore }} </li><br/>
+            <li> {{ form.area_min.label }} {{ form.area_min }} ~ {{ form.area_max.label }} {{ form.area_max }} </li><br/>
+            <li> {{ form.shape.label }} {{ form.shape }} </li><br/>
+            <li> {{ form.floor_min.label }} {{ form.floor_min }} ~ {{ form.floor_max.label }} {{ form.floor_max }} </li><br/>
+            <li> {{ form.sex.label }} {{ form.sex }} </li><br/>
+            <li> {{ form.option.label }} {{ form.option(multiple=True) }} </li><br/>
+            <li> {{ form.other.label }} {{ form.other(multiple=True) }} </li><br/>
+            <li> {{ form.hasimg.label }} {{ form.hasimg }} </li><br/>
+            <li> {{ form.not_cover.label }} {{ form.not_cover }} </li><br/>
+            <li> {{ form.role.label }} {{ form.role }} </li><br/>
+        </ul>
+        {{ form.submit }}
+	</form>
+</div>
+{% endblock %}
