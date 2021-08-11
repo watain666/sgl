@@ -1,5 +1,5 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+**/__pycache__
 *.py[cod]
 *$py.class
 
@@ -82,9 +82,6 @@ celerybeat-schedule
 venv/
 ENV/
 
-# pipenv
-.venv/
-
 # Spyder project settings
 .spyderproject
 
@@ -96,3 +93,6 @@ ENV/
 
 # Private
 settings.ini
+
+# Don't add git dir
+.git

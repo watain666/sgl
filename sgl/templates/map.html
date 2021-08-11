@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  {{ google_map.js }}
+{% endblock %}
+
+{% block body %}
+  {{ google_map.html }}
+{% endblock %}

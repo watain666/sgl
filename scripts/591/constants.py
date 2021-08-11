@@ -1,3 +1,4 @@
+ROOT_URL = "https://rent.591.com.tw"
 API_URL = "https://rent.591.com.tw/home/search/rsList"
 
 HEADERS = {
@@ -26,4 +27,8 @@ CONDITIONS = {
 
 WEB_URL_FORMAT_STR = "https://rent.591.com.tw/rent-detail-{}.html"
 
+<<<<<<< HEAD:5g1/constants.py
 PARSE_INTERVAL_IN_SECONDS = 900
+=======
+PARSE_INTERVAL_IN_SECONDS = 1800
+>>>>>>> 435b80037d6ea71643b31881fc8596c7b8b89e6f:scripts/591/constants.py
